@@ -9,6 +9,8 @@ tday = date.today()
 def main():
     st.title("Weeks Lived and Future Birthday Calculator")
 
+    st.markdown("This project has been inspired by [Wait But Why's Your Life in Weeks](https://waitbutwhy.com/2014/05/life-weeks.html) article.") 
+
     # Get the user's birth date
     bday = st.text_input("Enter your birth date in DD/MM/YYYY format")
     if not bday:
