@@ -29,8 +29,11 @@ def main():
     weeks = int(days.days / 7)
     st.write("You have lived", weeks, "weeks")
 
-    # Get the future 90th birthday date
-    future_bday_year = year + 90
+    # Get the future birthday date
+    future_bday_number = st.number_input("Which future birth date would you like to consider for this exercise?")
+    
+    # Get the future 90th birthday date    
+    future_bday_year = year + future_bday_number
     future_bday = datetime.date(future_bday_year, month, day)
 
     # Calculate days and weeks until the future 90th birthday
