@@ -56,9 +56,9 @@ def future_bday(future_bday_number, year, month, day, weeks):
     number_of_Circles = weeks + future_weeks
 
     # Create the colored chart using Matplotlib
-    create_colored_chart(number_of_Circles, weeks)
+    create_colored_chart(number_of_Circles, weeks, future_bday_number)
 
-def create_colored_chart(number_of_Circles, weeks):
+def create_colored_chart(number_of_Circles, weeks, future_bday_number):
     # Determine the number of rows required for the chart
     num_rows = (number_of_Circles + 51) // 52
     # Determine the number of circles to be colored red in the top row
@@ -85,7 +85,7 @@ def create_colored_chart(number_of_Circles, weeks):
     ax.set_yticks([])
     ax.set_xlim(-0.5, 51.5)
     ax.set_ylim(-0.5, num_rows - 0.5)
-    plt.title(f"{num_colored} weeks completed out of {number_of_Circles} weeks")
+    plt.title(f"{num_colored} weeks completed out of {number_of_Circles} weeks to {future_bday_number} birthday")
 
     # Display the plot in the Streamlit app
     st.pyplot(fig)
