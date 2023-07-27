@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 def main():
-    st.title("Weeks Lived and Future 90th Birthday Calculator")
+    st.title("Weeks Lived and Future Birthday Calculator")
 
     # Get the user's birth date
     bday = st.text_input("Enter your birth date in DD/MM/YYYY format")
