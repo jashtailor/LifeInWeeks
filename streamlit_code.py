@@ -48,9 +48,9 @@ def future_bday(future_bday_number, year, month, day, weeks):
 
     # Calculate days and weeks until the future 90th birthday
     future_days = future_bday - tday
-    st.write("Your 90th birthday is", future_days.days, "days away")
+    st.write("Your ",  future_bday_number, " birthday is", future_days.days, "days away")
     future_weeks = int(future_days.days / 7)
-    st.write("Your 90th birthday is", future_weeks, "weeks away")
+    st.write("Your ",  future_bday_number, " birthday is", future_weeks, "weeks away")
 
     # Calculate the total number of weeks
     number_of_Circles = weeks + future_weeks
