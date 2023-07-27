@@ -30,7 +30,7 @@ def main():
     st.write("You have lived", weeks, "weeks")
 
     # Get the future birthday date
-    future_bday_number = st.number_input("Which future birth date would you like to consider for this exercise?")
+    future_bday_number = st.text_input("Which future birth date would you like to consider for this exercise?")
     
     # Get the future 90th birthday date    
     future_bday_year = year + future_bday_number
