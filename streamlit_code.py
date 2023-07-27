@@ -3,6 +3,9 @@ from datetime import date
 import matplotlib.pyplot as plt
 import streamlit as st
 
+# Get today's date
+tday = date.today()
+
 def main():
     st.title("Weeks Lived and Future Birthday Calculator")
 
@@ -19,8 +22,6 @@ def main():
     year = int(date_split[2])
     bday_date = datetime.date(year, month, day)
 
-    # Get today's date
-    tday = date.today()
     st.write("Today's date is ", tday.strftime("%d/%m/%Y"))
 
     # Calculate the number of days and weeks lived
