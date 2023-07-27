@@ -35,8 +35,8 @@ def main():
     # Calculate the weeks and days left for the future birth date
     future_bday(future_bday_number, month, day, weeks)
 
-def future_bday(future_bday_number, month, day, weeks)    
-    # Get the future 90th birthday date    
+def future_bday(future_bday_number, month, day, weeks):    
+    # Get the future birthday date    
     future_bday_year = year + int(future_bday_number)
     future_bday = datetime.date(future_bday_year, month, day)
 
