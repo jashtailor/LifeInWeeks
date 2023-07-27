@@ -33,9 +33,9 @@ def main():
     future_bday_number = st.text_input("Which future birth date would you like to consider for this exercise?")
 
     # Calculate the weeks and days left for the future birth date
-    future_bday(future_bday_number, month, day, weeks)
+    future_bday(future_bday_number, year, month, day, weeks)
 
-def future_bday(future_bday_number, month, day, weeks):    
+def future_bday(future_bday_number, year, month, day, weeks):    
     # Get the future birthday date    
     future_bday_year = year + int(future_bday_number)
     future_bday = datetime.date(future_bday_year, month, day)
