@@ -10,6 +10,8 @@ def main():
     st.title("Weeks Lived and Future Birthday Calculator")
 
     st.markdown("This project has been inspired by [Wait But Why's Your Life in Weeks](https://waitbutwhy.com/2014/05/life-weeks.html) article.") 
+    
+    st.text('\n')
 
     # Get the user's birth date
     bday = st.text_input("Enter your birth date in DD/MM/YYYY format")
@@ -32,6 +34,8 @@ def main():
     weeks = int(days.days / 7)
     st.write("You have lived", weeks, "weeks")
 
+    st.text('\n')
+    
     # Get the future birthday date
     future_bday_number = st.text_input("Which future birth date would you like to consider for this exercise?")
     if future_bday_number:
