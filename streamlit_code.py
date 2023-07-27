@@ -31,9 +31,10 @@ def main():
 
     # Get the future birthday date
     future_bday_number = st.text_input("Which future birth date would you like to consider for this exercise?")
+    future_bday_number = int(future_bday_number)
     
     # Get the future 90th birthday date    
-    future_bday_year = year + int(future_bday_number)
+    future_bday_year = year + future_bday_number
     future_bday = datetime.date(future_bday_year, month, day)
 
     # Calculate days and weeks until the future 90th birthday
