@@ -15,6 +15,9 @@ def main():
         st.warning("Please enter your birth date.")
         return
 
+    # Get the future birthday date
+    future_bday_number = st.text_input("Which future birth date would you like to consider for this exercise?")
+
     # Convert the birth date to datetime object
     date_split = bday.split('/')
     day = int(date_split[0])
@@ -29,9 +32,6 @@ def main():
     st.write("You have lived", days.days, "days")
     weeks = int(days.days / 7)
     st.write("You have lived", weeks, "weeks")
-
-    # Get the future birthday date
-    future_bday_number = st.text_input("Which future birth date would you like to consider for this exercise?")
 
     # Calculate the weeks and days left for the future birth date
     future_bday(future_bday_number, year, month, day, weeks)
