@@ -37,7 +37,7 @@ def main():
             # Calculate the weeks and days left for the future birth date
             future_bday(future_bday_number, year, month, day, weeks)
         except ValueError:
-        st.warning("Please enter a valid integer.")
+            st.warning("Please enter a valid integer.")
     else:
         st.warning("Please enter a future birth date.")
 
